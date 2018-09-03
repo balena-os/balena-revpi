@@ -8,6 +8,7 @@ SRC_URI = " \
 	git://github.com/RevolutionPi/piControl;branch=revpi-4.14 \
 	file://0001-Use-modules_install-as-wanted-by-yocto.patch \
 	file://0002-Search-config-file-in-mnt-boot.patch \
+	file://0003-Retry-for-10s-to-open-the-config-file.patch \
 "
 
 SRCREV ="f3f4e463d0269d8e4ef2b0a8d599cbf759326427"

@@ -1,0 +1,47 @@
+From b61b7cec34a25a302153fbab7ad4b239d38df36a Mon Sep 17 00:00:00 2001
+From: Sebastian Panceac <sebastian@resin.io>
+Date: Mon, 3 Sep 2018 15:59:34 +0200
+Subject: [PATCH] Retry for 10s to open the config file
+
+Because the kernel modules are loaded before mounting /mnt/boot partition, the piControl
+module is unable to find the configuration file which resides in /mnt/boot.
+Now the driver retries 10 times with a delay of 1s between them to load the configuration file
+before failing.
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Sebastian Panceac <sebastian@resin.io>
+---
+ piConfig.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+diff --git a/piConfig.c b/piConfig.c
+index 63ba5fa..f8ab887 100644
+--- a/piConfig.c
++++ b/piConfig.c
+@@ -36,6 +36,7 @@
+ #include <linux/module.h>	// included for all kernel modules
+ #include <linux/kernel.h>	// included for KERN_INFO
+ #include <linux/slab.h>		// included for KERN_INFO
++#include <linux/delay.h>
+ #include <linux/fs.h>
+ #include <asm/uaccess.h>
+ #include <asm/segment.h>
+@@ -98,7 +99,14 @@ char *string_of_errors[] = {
+ struct file *open_filename(const char *filename, int flags)
+ {
+ 	struct file *input;
+-	input = filp_open(filename, flags, 0);
++	int retries;
++	for(retries = 10; retries > 0; retries--)
++	{
++		/* retry for 10s for /mnt/boot partition to get mounted */
++		input = filp_open(filename, flags, 0);
++		if (!IS_ERR(input)) break;
++		msleep(1000);
++	}
+ 
+ 	pr_info_config("filp_open %s %x  %d %x\n", filename, (int)filename, (int)input, (int)input);
+ 
+-- 
+2.7.4
+
