@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.15.1+rev3
+## (2018-09-20)
+
+* Update the poky submodule to sumo-19.0.1 [Florin Sarbu]
+
 # v2.15.1+rev2
 ## (2018-09-04)
 
