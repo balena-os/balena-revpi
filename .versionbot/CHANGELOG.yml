@@ -1,0 +1,17 @@
+- version: 2.15.1+rev3
+  date: 2018-09-19T22:00:00.000Z
+  commits:
+    - subject: 'Update the poky submodule to sumo-19.0.1 [Florin Sarbu]'
+- version: 2.15.1+rev2
+  date: 2018-09-03T22:00:00.000Z
+  commits:
+    - subject: >-
+        Resin-mounts: Mount boot partition before loading kernel modules
+        [Sebastian Panceac]
+- version: 2.15.1+rev1
+  date: 2018-08-30T22:00:00.000Z
+  commits:
+    - subject: 'Update the meta-resin submodule to version v2.15.1 [Florin Sarbu]'
+- version: 2.14.1+rev1
+  date: 2018-08-05T22:00:00.000Z
+  commits: []
