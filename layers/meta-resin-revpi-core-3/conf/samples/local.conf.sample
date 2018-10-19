@@ -8,6 +8,8 @@
 # RaspberryPi specific variables
 GPU_MEM = "16"
 
+BALENA_STORAGE = "overlay2"
+
 # RPI BSP uses uncompressed kernel images by default
 KERNEL_IMAGETYPE="zImage"
 
