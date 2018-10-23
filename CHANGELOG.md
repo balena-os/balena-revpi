@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.23.0+rev1
+## (2018-10-23)
+
+* Update meta-resin from 2.19.0 to 2.23.0 [Sebastian Panceac]
+
 # v2.19.0+rev1
 ## (2018-09-27)
 
