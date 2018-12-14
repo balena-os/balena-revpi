@@ -1,4 +1,16 @@
 - commits:
+    - subject: Switch from resin-yocto-scripts to balena-yocto-scripts
+      hash: c447ff4b337f156cfe08ceba820c6329e2744e80
+      body: ''
+      footer:
+        Changelog-entry: Switch from resin-yocto-scripts to balena-yocto-scripts
+        changelog-entry: Switch from resin-yocto-scripts to balena-yocto-scripts
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev2
+  date: 2018-12-14T16:22:51.942Z
+- commits:
     - subject: Update the meta-resin submodule from v2.19.0 to v2.26.0
       hash: 6234e4479c5346dfe9dabff8c14371e606365181
       body: |
