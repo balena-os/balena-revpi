@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix the provisioning instructions for Revolution Pi
+      hash: 5aa81c4f95beb13da0de341a8355148a43079208
+      body: ''
+      footer:
+        Changelog-entry: Fix the provisioning instructions for Revolution Pi
+        changelog-entry: Fix the provisioning instructions for Revolution Pi
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.26.0+rev2
+  date: 2018-12-18T13:55:04.000Z
+- commits:
     - subject: Update the meta-resin submodule from v2.19.0 to v2.26.0
       hash: 6234e4479c5346dfe9dabff8c14371e606365181
       body: |
