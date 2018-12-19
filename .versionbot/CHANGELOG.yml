@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix the provisioning instructions for Revolution Pi
+      hash: 7e44a4f1e05bde6419f27269cdfb4e3f0eb1479b
+      body: ''
+      footer:
+        Changelog-entry: Fix the provisioning instructions for Revolution Pi
+        changelog-entry: Fix the provisioning instructions for Revolution Pi
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.26.0+rev4
+  date: 2018-12-19T13:48:13.482Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.0.1
       hash: 25ed4516226c75992e895ec19cf6565f570bc6b9
       body: ''
