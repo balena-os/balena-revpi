@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev3
+## (2018-12-19)
+
+* Fix the provisioning instructions for Revolution Pi [Sebastian Panceac]
+
 # v2.26.0+rev2
 ## (2018-12-14)
 
