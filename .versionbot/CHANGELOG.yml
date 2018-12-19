@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.0.1
+      hash: 25ed4516226c75992e895ec19cf6565f570bc6b9
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.0.1
+        changelog-entry: Update balena-yocto-scripts to v1.0.1
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.26.0+rev3
+  date: 2018-12-19T10:16:05.275Z
+- commits:
     - subject: Switch from resin-yocto-scripts to balena-yocto-scripts
       hash: c447ff4b337f156cfe08ceba820c6329e2744e80
       body: ''
